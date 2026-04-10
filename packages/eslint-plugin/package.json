@@ -3,11 +3,29 @@
   "version": "1.0.0",
   "description": "Domain-aware ESLint plugin for React banking applications",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsc -w",
-    "test": "vitest run"
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "react",
+    "security",
+    "banking"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
     "@react-banking-security-linter/core-engine": "workspace:*"
   },
@@ -17,5 +35,13 @@
   },
   "peerDependencies": {
     "eslint": ">=8.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paullotz/react-banking-security-linter"
+  },
+  "bugs": {
+    "url": "https://github.com/paullotz/react-banking-security-linter/issues"
+  },
+  "homepage": "https://github.com/paullotz/react-banking-security-linter#readme"
 }

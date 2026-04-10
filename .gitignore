@@ -21,7 +21,6 @@ out/
 Thumbs.db
 
 # Workspace / IDE
-.vscode/
 .idea/
 *.suo
 *.ntvs*
