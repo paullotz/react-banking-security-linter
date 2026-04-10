@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist"
+  },
+  "include": ["tests/**/*", "test-components/**/*"],
+  "references": [
+    { "path": "../core-engine" },
+    { "path": "../eslint-plugin" }
+  ]
+}

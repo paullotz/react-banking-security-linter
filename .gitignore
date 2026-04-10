@@ -1,0 +1,40 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Node
+node_modules/
+
+# Build Output
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Workspace / IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Testing
+coverage/
+
+# Misc
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

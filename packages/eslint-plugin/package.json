@@ -1,0 +1,21 @@
+{
+  "name": "eslint-plugin-react-banking-security",
+  "version": "1.0.0",
+  "description": "Domain-aware ESLint plugin for React banking applications",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@react-banking-security-linter/core-engine": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.56.5",
+    "eslint": "^8.57.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@react-banking-security-linter/test-cases",
+  "private": true,
+  "description": "Technical validation test suite containing the 15 evaluation scenarios",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@react-banking-security-linter/core-engine": "workspace:*",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/parser": "^8.57.2",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-banking-security": "workspace:*",
+    "react-router-dom": "^6.22.3",
+    "@types/react-router-dom": "^5.3.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "vitest": "^1.4.0"
+  }
+}

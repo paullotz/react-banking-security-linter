@@ -1,0 +1,18 @@
+{
+  "name": "@react-banking-security-linter/core-engine",
+  "version": "1.0.0",
+  "description": "Core engine for AST traversal and Component Graph reconstruction",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "typescript": "^5.4.0"
+  },
+  "devDependencies": {
+    "vitest": "^1.4.0"
+  }
+}
