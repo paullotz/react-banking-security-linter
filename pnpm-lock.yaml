@@ -11,6 +11,9 @@ importers:
       '@types/node':
         specifier: ^20.0.0
         version: 20.19.35
+      eslint-plugin-react-banking-security:
+        specifier: workspace:*
+        version: link:packages/eslint-plugin
       typescript:
         specifier: ^5.4.0
         version: 5.9.3
