@@ -41,7 +41,7 @@ export const navigationSecurityRule: Rule.RuleModule = {
   },
   create(context) {
     const filename = context.filename;
-    const sourceCode = context.getSourceCode().getText();
+    const sourceCode = context.sourceCode.getText();
 
     return {
       Program() {
