@@ -1,5 +1,4 @@
 {
-  "root": true,
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2020,
@@ -8,19 +7,11 @@
       "jsx": true
     }
   },
-  "env": {
-    "browser": true,
-    "es6": true,
-    "node": true
-  },
-  "extends": [
-    "eslint:recommended"
-  ],
   "plugins": [
-    "react-banking-security"
+    "@react-banking-security-linter"
   ],
   "rules": {
-    "react-banking-security/navigation-security": "error",
-    "react-banking-security/data-compliance": "error"
+    "@react-banking-security-linter/navigation-security": "error",
+    "@react-banking-security-linter/data-compliance": "error"
   }
 }

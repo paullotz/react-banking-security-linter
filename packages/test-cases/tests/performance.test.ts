@@ -6,8 +6,8 @@ import {
   walkAST
 } from '@react-banking-security-linter/core-engine';
 
-describe('Performance Validation (WP1)', () => {
-  it('should build component graph in less than 100ms', () => {
+describe('Performance Unit Tests (Individual Operations)', () => {
+  it('should build component graph in less than 100ms for complex component', () => {
     const complexReactComponent = `
       import React, { useState, useEffect } from 'react';
       import { useNavigate, useSearchParams } from 'react-router-dom';
@@ -59,14 +59,10 @@ describe('Performance Validation (WP1)', () => {
     const end = performance.now();
 
     const duration = end - start;
-    console.log(`Component graph construction took ${duration.toFixed(2)}ms`);
-    console.log(`Components: ${graph.components.size}`);
-    console.log(`Variables: ${graph.variables.size}`);
-    console.log(`Data flow edges: ${graph.dataFlow.length}`);
-    console.log(`Taint sources: ${graph.taintSources.length}`);
-    console.log(`Taint sinks: ${graph.taintSinks.length}`);
+    console.log(`Component graph construction: ${duration.toFixed(2)}ms`);
     
     expect(duration).toBeLessThanOrEqual(100);
+    expect(graph.components.size).toBeGreaterThan(0);
   });
 
   it('should perform taint analysis in less than 100ms', () => {
@@ -90,7 +86,7 @@ describe('Performance Validation (WP1)', () => {
     const end = performance.now();
 
     const duration = end - start;
-    console.log(`Taint analysis took ${duration.toFixed(2)}ms, result: ${result}`);
+    console.log(`Taint analysis: ${duration.toFixed(2)}ms, result: ${result}`);
     expect(duration).toBeLessThanOrEqual(100);
     expect(result).toBe(true);
   });
@@ -119,8 +115,7 @@ describe('Performance Validation (WP1)', () => {
     const end = performance.now();
 
     const duration = end - start;
-    console.log(`Nomenclature analysis took ${duration.toFixed(2)}ms`);
-    console.log(`Results: token=${result1}, session=${result2}, apiKey=${result3}`);
+    console.log(`Nomenclature analysis: ${duration.toFixed(2)}ms`);
     expect(duration).toBeLessThanOrEqual(100);
     expect(result1).toBe(true);
     expect(result2).toBe(true);
@@ -147,7 +142,7 @@ describe('Performance Validation (WP1)', () => {
     const end = performance.now();
 
     const duration = end - start;
-    console.log(`AST walking took ${duration.toFixed(2)}ms`);
+    console.log(`AST walking: ${duration.toFixed(2)}ms`);
     
     expect(duration).toBeLessThanOrEqual(100);
   });
