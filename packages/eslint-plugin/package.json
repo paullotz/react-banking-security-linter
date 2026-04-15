@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-react-banking-security",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Domain-aware ESLint plugin for React banking applications",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
