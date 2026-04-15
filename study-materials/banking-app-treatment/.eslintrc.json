@@ -8,10 +8,10 @@
     }
   },
   "plugins": [
-    "@react-banking-security-linter"
+    "react-banking-security"
   ],
   "rules": {
-    "@react-banking-security-linter/navigation-security": "error",
-    "@react-banking-security-linter/data-compliance": "error"
+    "react-banking-security/navigation-security": "error",
+    "react-banking-security/data-compliance": "error"
   }
 }
